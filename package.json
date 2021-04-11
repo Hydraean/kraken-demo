@@ -1,0 +1,46 @@
+{
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^3.0.7",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "d3-geo": "^2.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fuse.js": "^6.4.1",
+    "geojson-geometries-lookup": "^0.5.0",
+    "lowdb": "^1.0.0",
+    "moment": "^2.27.0",
+    "moment-timezone": "^0.5.33",
+    "mongodb": "^3.6.5",
+    "mongoose": "^5.12.1",
+    "socket.io": "^2.2.0"
+  },
+  "name": "kraken",
+  "description": "kraken demo API",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^12.12.14",
+    "nodemon": "^2.0.1",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  },
+  "scripts": {
+    "start": "node ./build/index.js",
+    "dev": "kill -9 `lsof -t -i :7000`; nodemon ./src/index.ts",
+    "build": "tsc -p .",
+    "run-build": "tsc -p . && node ./build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quadroloop/nebular"
+  },
+  "author": "Bryce Mercines",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quadroloop/nebular/issues"
+  },
+  "homepage": ""
+}
